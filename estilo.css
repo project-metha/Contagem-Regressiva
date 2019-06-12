@@ -1,0 +1,103 @@
+*{
+  font-family: 'Roboto Mono', monospace;/*
+font-family: 'Faster One', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'Audiowide', cursive;*/
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.page{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col{
+  flex: 1;
+  height: 100vh;
+  position: relative;
+}
+
+.text{
+  color: #fff;
+  font-size: 10px;
+}
+.countdown-col{
+  background: url(background_1.jpg) no-repeat center;
+  background-size: 100%;
+  padding-left: 30%;
+  background-size: cover;
+}
+.time{
+  font-weight: 800;
+  padding-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.time span{
+  padding: 0 14px;
+  font-size: 10px;
+}
+.time span div{
+  font-size: 40px;
+}
+
+/*Tela Menor 900px*/
+@media screen and (max-width :900px){
+  .col{
+    flex: 100%;
+  }
+}  
+
+/*Tela Menor 900px*/
+@media screen and (max-width: 700px){
+  .text{
+    padding-top: 50px;
+    padding-left: 0px;
+    font-size: 8px;
+  }
+}
+
+/*Tela Maior 900px*/
+@media screen and (min-width: 900px){
+  .text{
+    padding-top: 10px;
+    padding-left: 18%;
+    font-size: 10px;
+  }
+}    
+
+/*Tela Menor 900px*/
+@media screen and (max-width: 900px){
+  .time{
+    padding-top: 300px;
+    font-size: 8px;
+  }
+}
+
+/*Tela Maior 900px*/
+@media screen and (min-width: 900px){
+  .time{
+    padding-top: 350px;
+  }
+}
+
+Tela Menor 900px
+@media screen and (max-width: 900px){
+  .countdown-col{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
